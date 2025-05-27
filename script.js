@@ -1,7 +1,6 @@
 const ApiKey = "80d9b2aa5baac24446a3e44e58e4d1ad";
 const URL = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=`;
 
-
 const Invalid = document.querySelector(".Invalid");
 const showWeather = document.querySelector(".container")
 const City = document.getElementById("city")
@@ -32,8 +31,6 @@ const weatherIcons = {
     Squall: "🌬️",         // Sudden wind
     Tornado: "🌪️",        // Tornado
 }
-
-
 
 async function clickSeacrh() {
     const cityValue = document.getElementById("input").value;
