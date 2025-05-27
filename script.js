@@ -35,7 +35,7 @@ const weatherIcons = {
 async function clickSeacrh() {
     const cityValue = document.getElementById("input").value;
     if (cityValue == "") {
-        alert("Enter City Name");
+        alert("Enter Country or City Name");
         return;
     }
 
