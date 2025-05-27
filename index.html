@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Weather App</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Material Symbols -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main-div">
+        <h1>Weather App</h1>
+
+        <div class="input-container">
+            <input type=" text" id="input" placeholder="Enter City" />
+            <button onclick="clickSeacrh()"><i class=" fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <p class="Invalid">City not found. Please try again.</p>
+
+        <div class="container">
+
+            <div class="all-location">
+                <div><i class="fa-solid fa-location-dot"></i></div>
+                <div style="display: flex; gap: 5px;">
+                    <p id="city">City</p>
+                    <p id="country">Country</p>
+                </div>
+                <div> <img id="flag" src="" alt="country-flag" /></div>
+            </div>
+
+            <div class="Weather-img-div">
+                <!-- <img src="./assests/clouds.png" alt="Weather-img"> -->
+                <div id="icon"></div>
+                <h2 id="Temperature">31°</h2>
+                <p id="description">Rain</p>
+            </div>
+
+            <div class="Conditions">
+                <div class="same-class">
+                    <p>Cloudy</p>
+                    <i class="fa-solid fa-cloud"></i>
+                    <p id="cloud">65%</p>
+                </div>
+
+                <div class="same-class">
+                    <p>Humidity</p>
+                    <img src="./assests/humidity (1).png" style="width: 30%; color: white; margin-top: 5px;" alt="">
+                    <p id="humidity">80%</p>
+                </div>
+
+                <div class="same-class">
+                    <p>Wind</p>
+                    <i class="fa-solid fa-wind"></i>
+                    <p id="wind">10 m/s</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
