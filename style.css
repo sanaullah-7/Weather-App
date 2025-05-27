@@ -142,6 +142,7 @@ span.material-symbols-outlined {
 @media (max-width: 600px) {
     .main-div {
         padding: 1rem;
+        width: 400px;
     }
 
     h1 {
@@ -159,5 +160,12 @@ span.material-symbols-outlined {
     .same-class {
         flex: 1 1 45%;
         font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 450px) {
+    .main-div {
+        width: 330px;
+
     }
 }
